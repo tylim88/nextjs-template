@@ -7,13 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"setup": "husky"
-	},
-	"prettier": {
-		"singleQuote": true,
-		"semi": false,
-		"useTabs": true,
-		"endOfLine": "auto"
+		"setup": "npm i && husky init"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "^5.73.3",
@@ -41,5 +35,16 @@
 		"prettier": "^3.5.2",
 		"tailwindcss": "^4",
 		"typescript": "^5"
+	},
+	"lint-staged": {
+		"*.{ts,tsx}": [
+			"eslint --fix"
+		]
+	},
+	"prettier": {
+		"singleQuote": true,
+		"semi": false,
+		"useTabs": true,
+		"endOfLine": "auto"
 	}
 }
