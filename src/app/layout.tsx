@@ -6,7 +6,7 @@ import {
 	mantineHtmlProps,
 	createTheme,
 } from '@mantine/core'
-import './globals.css'
+import 'tailwind-preset-mantine'
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
