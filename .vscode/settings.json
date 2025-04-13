@@ -1,4 +1,5 @@
 {
+	"editor.formatOnSave": true,
 	"cssVariables.lookupFiles": [
 		"**/*.css",
 		"**/*.scss",
